@@ -13,24 +13,29 @@ export const Object = ({ object, killObject }) => {
     color
   } = object
 
-  // const [isAlive, setIsAlive] = useState(alive)
-
   useEffect(() => {
-    const element = document.getElementsByClassName(`obj${id}`)
-    element[0]?.addEventListener('mouseover', () => { killObject(id) })
-    return () => {
-      element[0]?.removeEventListener('mouseover', () => { killObject(id) })
+    const deleteObject = () => {
+      // console.log('kill')
+      killObject(id, color)
     }
-  }, [])
+    const element = document.getElementsByClassName(`obj${id}`)
+    // console.log('add event to ', id)
+    element[0]?.addEventListener('mouseover', deleteObject)
+    return () => {
+      element[0]?.removeEventListener('mouseover', deleteObject)
+    }
+  })
 
   return (
     <div
       className={`obj${id}`}
       style={{
+        position: 'absolute',
         top: x,
         left: y,
         height,
-        width
+        width,
+        background: color
       }}
     />
   )
