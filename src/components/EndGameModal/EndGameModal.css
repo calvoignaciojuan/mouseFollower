@@ -1,0 +1,40 @@
+.modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.94;
+}
+
+.modal section{
+  display: flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: cadetblue;
+  border-color: white;
+  border: solid cadetblue 2px;
+  border-radius: 6px;
+}
+
+.modal p{
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+.modal button{
+  margin-top: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 12px;
+  background-color: black;
+  color: white;
+}

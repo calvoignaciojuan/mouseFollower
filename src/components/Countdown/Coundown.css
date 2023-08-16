@@ -1,0 +1,23 @@
+.score{
+  display: flex;
+  justify-content: center;
+  background-color:  #222;
+  height: 5vh;
+}
+
+span{
+  color: green;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.yell{
+  color: yellow;
+}
+.warning {
+  color: orange;
+}
+.danger{
+  color: red;
+
+}

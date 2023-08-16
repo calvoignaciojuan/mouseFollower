@@ -31,11 +31,12 @@ export const Object = ({ object, killObject }) => {
       className={`obj${id}`}
       style={{
         position: 'absolute',
-        top: x,
-        left: y,
+        top: y,
+        left: x,
         height,
         width,
-        background: color
+        background: color,
+        borderRadius: 6
       }}
     />
   )
